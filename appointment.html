@@ -62,11 +62,11 @@ color: white;
     </nav>
     <div class="container mt-4 p-5 bg-dark text-white">
       <h1 class="text-center">Appointment</h1>
-      <p class="text-center">Email us to schedule an appointment at:</p>
+      <p class="text-center">Please fill out our customer form to schedule an appointment.</p>
 <div class="text-center">
   <!-- Button trigger modal -->
 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Email
+  Customer Form
 </button>
 
 <!-- Modal -->
@@ -80,6 +80,16 @@ color: white;
       <div class="customer-form modal-body">
         Please describe your computer issue.
       </div>
+<form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
       <div class="customer-form modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary">Send</button>
