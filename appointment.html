@@ -80,7 +80,7 @@ color: white;
       <div class="customer-form modal-body">
         Enter your computer error...
       </div>
-<form action= "mailto:namtroubleshoot7374@gmail.com" class="customer-form">
+<form enctype="text/plain" method="post" action= "mailto:namtroubleshoot7374@gmail.com" class="customer-form">
           <div class="customer-form mb-3">
             <label for="recipient-name" class="col-form-label">Subject:</label>
             <input type="text" class="customer-form form-control" id="subject">
@@ -92,7 +92,7 @@ color: white;
         </form>
       <div class="customer-form modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button onclick="getInputValue1(); mailTo();" type="button" class="btn btn-warning">Email</button>
+        <button value="Send" type="submit" class="btn btn-warning">Email</button>
       </div>
     </div>
   </div>
