@@ -92,7 +92,7 @@ color: white;
         </form>
       <div class="customer-form modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button onclick="getInputValue();" type="button" class="btn btn-warning">Email</button>
+        <button onclick="getInputValue(); + mailTo();" type="button" class="btn btn-warning">Email</button>
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@ Tye, TX<br>
     <script>
 function mailTo()
 {
-window.location.href ="mailto:namtroubleshoot7374@gmail.com";
+window.location.href ="mailto:namtroubleshoot7374@gmail.com?subject=Interesting information&body=I thought you might find this information interesting...";
 }
 function getInputValue(){
             // Selecting the input element and get its value 
