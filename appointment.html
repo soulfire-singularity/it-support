@@ -83,7 +83,7 @@ color: white;
 <form class="customer-form">
           <div class="customer-form mb-3">
             <label for="recipient-name" class="col-form-label">Subject:</label>
-            <input type="text" class="customer-form form-control" id="recipient-name">
+            <input type="text" class="customer-form form-control" id="subject">
           </div>
           <div class="customer-form mb-3">
             <label for="message-text" class="col-form-label">Details:</label>
@@ -92,7 +92,7 @@ color: white;
         </form>
       <div class="customer-form modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button onclick="getInputValue(); mailTo();" type="button" class="btn btn-warning">Email</button>
+        <button onclick="getInputValue1(); mailTo();" type="button" class="btn btn-warning">Email</button>
       </div>
     </div>
   </div>
@@ -132,12 +132,19 @@ function mailTo()
 {
 window.location.href ="mailto:namtroubleshoot7374@gmail.com?subject=Interesting information&body=I thought you might find this information interesting...";
 }
-function getInputValue(){
+function getInputValue1(){
             // Selecting the input element and get its value 
-            var inputVal = document.getElementById("message-text").value;
+            var inputVal1 = document.getElementById("message-text").value;
             
             // Displaying the value
-            alert(inputVal);
+            alert(inputVal1);
+        }
+function getInputValue2(){
+            // Selecting the input element and get its value 
+            var inputVal2 = document.getElementById("subject").value;
+            
+            // Displaying the value
+            alert(inputVal2);
         }
 </script>
     <!-- Optional JavaScript; choose one of the two! -->
