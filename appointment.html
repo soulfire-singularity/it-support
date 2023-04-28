@@ -120,27 +120,10 @@ Tye, TX<br>
       </div>
     </div>
   <footer class="ad-footer">
-  <p>©2023 Nameron Solutions</p>
+  <p>©<span id="year"></span> Nameron Solutions</p>
 </footer>
     <script>
-function mailTo()
-{
-window.location.href ="mailto:namtroubleshoot7374@gmail.com?subject=Interesting information&body=I thought you might find this information interesting...";
-}
-function getInputValue1(){
-            // Selecting the input element and get its value 
-            var inputVal1 = document.getElementById("message-text").value;
-            
-            // Displaying the value
-            alert(inputVal1);
-        }
-function getInputValue2(){
-            // Selecting the input element and get its value 
-            var inputVal2 = document.getElementById("subject").value;
-            
-            // Displaying the value
-            alert(inputVal2);
-        }
+document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
