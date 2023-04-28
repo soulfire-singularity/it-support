@@ -98,8 +98,11 @@
     </div>
       </div>
   <footer class="container-fluid ad-footer">
-  <p>©2023 Nameron Solutions</p>
+  <p>©<span id="year"></span> Nameron Solutions</p>
 </footer>
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
     </body>
     <!-- Optional JavaScript; choose one of the two! -->
 
